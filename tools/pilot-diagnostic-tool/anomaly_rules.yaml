@@ -1,0 +1,30 @@
+# Anomaly Detection Rules for Pilot Diagnostic Engine
+system_issues:
+  - keyword: "DISABLE REASON: Location not open"
+    component: null
+  - keyword: "outofmemory"
+    component: null
+
+hardware_issues:
+  - keyword: "Error"
+    component: "HARDWARE_CONTROL"
+  - keyword: "Failure"
+    component: "HARDWARE_CONTROL"
+
+game_state_issues:
+  - keyword: "unexpected state transition"
+    component: "FSM`2"
+
+io_event_issues:
+  - keyword: "error"
+    component: "IO_EVENT"
+  - keyword: "failure"
+    component: "IO_EVENT"
+
+network_issues:
+  - keyword: "timeout"
+    component: null
+  - keyword: "connection refused"
+    component: null
+  - keyword: "status: 5"
+    component: null
