@@ -1,0 +1,31 @@
+{
+  "file": "sample_build.log",
+  "status": "FAILED",
+  "duration": "32.4s",
+  "error_count": 2,
+  "warning_count": 2,
+  "errors": [
+    {
+      "line": 9,
+      "level": "ERROR",
+      "message": "test_db.py::test_connection ConnectionRefusedError: Failed to connect to localhost:5432"
+    },
+    {
+      "line": 10,
+      "level": "FATAL",
+      "message": "Test suite failed with 1 error(s). Halting deployment."
+    }
+  ],
+  "warnings": [
+    {
+      "line": 4,
+      "level": "WARN",
+      "message": "Deprecated dependency 'urllib3<1.26' detected in requirements.txt."
+    },
+    {
+      "line": 6,
+      "level": "WARNING",
+      "message": "Line 45 in app/server.py exceeds 88 characters (line-too-long)."
+    }
+  ]
+}
