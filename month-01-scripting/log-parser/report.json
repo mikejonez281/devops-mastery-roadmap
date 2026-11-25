@@ -2,30 +2,48 @@
   "file": "sample_build.log",
   "status": "FAILED",
   "duration": "32.4s",
+  "total_lines_analyzed": 11,
   "error_count": 2,
   "warning_count": 2,
   "errors": [
     {
       "line": 9,
-      "level": "ERROR",
+      "component": "BuildSystem",
       "message": "test_db.py::test_connection ConnectionRefusedError: Failed to connect to localhost:5432"
     },
     {
       "line": 10,
-      "level": "FATAL",
+      "component": "BuildSystem",
       "message": "Test suite failed with 1 error(s). Halting deployment."
     }
   ],
   "warnings": [
     {
       "line": 4,
-      "level": "WARN",
+      "component": "BuildSystem",
       "message": "Deprecated dependency 'urllib3<1.26' detected in requirements.txt."
     },
     {
       "line": 6,
-      "level": "WARNING",
+      "component": "BuildSystem",
       "message": "Line 45 in app/server.py exceeds 88 characters (line-too-long)."
     }
-  ]
+  ],
+  "anomalies": {
+    "hardware_issues": [],
+    "system_issues": [],
+    "game_state_issues": [],
+    "io_event_issues": [],
+    "network_issues": [],
+    "memory_issues": [],
+    "time_gaps": [],
+    "error_patterns": [],
+    "component_breakdown": {
+      "BuildSystem": {
+        "errors": 2,
+        "warnings": 2,
+        "total": 11
+      }
+    }
+  }
 }

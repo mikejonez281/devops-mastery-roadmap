@@ -1,5 +1,0 @@
-# Pilot Diagnostic Tool Dependencies
-customtkinter>=5.2.0
-Pillow>=10.0.0
-pyyaml>=6.0.0
-psutil>=5.9.0
