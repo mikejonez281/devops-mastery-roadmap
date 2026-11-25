@@ -1,0 +1,5 @@
+﻿{
+  "database": "postgres://prod-db:5432/app",
+  "pool_size": 20,
+  "timeout_seconds": 30
+}
